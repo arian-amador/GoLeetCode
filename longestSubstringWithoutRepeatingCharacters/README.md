@@ -27,31 +27,31 @@ The above makes sure we are only tracking substrings without repeating character
 
 ```Go
 func lengthOfLongestSubstring(s string) int {
-	var head, max int
-	n := len(s)
+  var head, max int
+  n := len(s)
   visited := make(map[string]int)
 
-	for tail := 0; tail < n; tail++ {
+  for tail := 0; tail < n; tail++ {
     // The current character
     curr := s[tail : tail+1]
 
     // Have we seen this char and
     // is it's position higher than the current head?
-		if visited[curr] > 0 && visited[curr] > head {
-			head = visited[curr] // Update head pointer
+    if visited[curr] > 0 && visited[curr] > head {
+      head = visited[curr] // Update head pointer
     }
 
     // Is the current substring length longer than
     // previous tracked substring length/
-		if max < tail-head+1 {
-			max = tail - head + 1 // Update max substring found
+    if max < tail-head+1 {
+      max = tail - head + 1 // Update max substring found
     }
 
     // Update the lookup table for the current char with the current position
-		visited[curr] = tail + 1
+    visited[curr] = tail + 1
   }
 
-	return max
+  return max
 }
 ```
 
