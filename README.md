@@ -1,4 +1,4 @@
-# Go Leet Code Exercise
+# Go Leet Code Exercise [![Build Status](https://api.travis-ci.org/arian-amador/GoLeetCode.svg)](https://travis-ci.org/arian-amador/GoLeetCode)
 
 ---
 
