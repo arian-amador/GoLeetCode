@@ -22,16 +22,16 @@ It's the easiest to reason about but also ends up being the slowest by quite a b
 
 ```Go
 func bruteTwoSum(nums []int, target int) []int {
-	res := []int{}
+  res := []int{}
 
-	for i := 0; i < len(nums); i++ {
-		for j := i + 1; j < len(nums); j++ {
-			if nums[i]+nums[j] == target {
-				res = []int{i, j}
+  for i := 0; i < len(nums); i++ {
+    for j := i + 1; j < len(nums); j++ {
+      if nums[i]+nums[j] == target {
+        res = []int{i, j}
 				return res
-			}
-		}
-	}
+      }
+    }
+  }
 	return res
 }
 ```
