@@ -22,16 +22,16 @@ It's the easiest to reason about but also ends up being the slowest by quite a b
 
 ```Go
 func bruteTwoSum(nums []int, target int) []int {
-  res := []int{}
+	res := []int{}
 
-  for i := 0; i < len(nums); i++ {
-    for j := i + 1; j < len(nums); j++ {
-      if nums[i]+nums[j] == target {
-        res = []int{i, j}
+	for i := 0; i < len(nums); i++ {
+		for j := i + 1; j < len(nums); j++ {
+			if nums[i]+nums[j] == target {
+				res = []int{i, j}
 				return res
-      }
-    }
-  }
+			}
+		}
+	}
 	return res
 }
 ```
@@ -45,11 +45,14 @@ If the sum is less than the target we move the left side otherwise we move the r
 ```Go
 func sortedTwoSum(nums []int, target int) []int {
 	sort.Ints(nums)
+	
 	l := 0
 	r := len(nums) - 1
 	res := []int{}
+	
 	for i := 0; i < len(nums); i++ {
 		temp := nums[l] + nums[r]
+		
 		if temp == target {
 			res = []int{l, r}
 			break
@@ -74,11 +77,14 @@ Otherwise we store the current integer as the key with the index as the value.
 ```Go
 func onePassHash(nums []int, target int) []int {
 	l := make(map[int]int)
+	
 	for i := 0; i < len(nums); i++ {
 		c := target - nums[i]
+		
 		if val, ok := l[c]; ok {
 			return []int{val, i}
 		}
+		
 		l[nums[i]] = i
 	}
 	return []int{}
