@@ -23,15 +23,15 @@ One of the first things to notice is the function to count islands receives a sl
 The solution below is fairly simple as we just iterate over each character starting from the top left and checking if we've found `land`. If `land` is found we send the grid coordinates along with the grid and it's dimensions. We send the grid to the search function allowing us to modify the original grid while continuing the search.
 
 ```Go
-	for i, rows := range grid {
-		for j := range rows {
-			curr := grid[i][j]
-			if curr == land {
-				islands++
-				searchIsland(&grid, i, j, h, w)
-			}
+for i, rows := range grid {
+	for j := range rows {
+		curr := grid[i][j]
+		if curr == land {
+			islands++
+			searchIsland(&grid, i, j, h, w)
 		}
-  }
+	}
+}
 ```
 
 Prior to calling `searchIsland()` we increment our total island count. This allows us only to track the `land` coordinates that we haven't previously visited during the `searchIsland()` search. Making any `land` found during this loop an `island`.
