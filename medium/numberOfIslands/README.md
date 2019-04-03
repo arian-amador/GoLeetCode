@@ -5,15 +5,15 @@
 Given a 2d grid map of `1`s (land) and `0`s (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 
 ##### Example
-
-_Input_:
+```Go
+Input:
 11110
 11010
 11000
 00000
 
-_Output_: 1
-
+Output: 1
+```
 ### Solutions
 
 This is a Depth First Search graph problem making it a recursive search solution.
