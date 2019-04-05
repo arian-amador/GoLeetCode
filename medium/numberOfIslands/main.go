@@ -21,19 +21,19 @@ const (
 func searchIsland(g [][]byte, row, col, h, w int) {
 	g[row][col] = water
 
-	// Upper Boundry
+	// Upper Boundary
 	if row > 0 && g[row-1][col] == land {
 		searchIsland(g, row-1, col, h, w)
 	}
-	// Lower Boundry
+	// Lower Boundary
 	if row+1 < h && g[row+1][col] == land {
 		searchIsland(g, row+1, col, h, w)
 	}
-	// Left Boundry
+	// Left Boundary
 	if col > 0 && g[row][col-1] == land {
 		searchIsland(g, row, col-1, h, w)
 	}
-	// Right Boundry
+	// Right Boundary
 	if col+1 < w && g[row][col+1] == land {
 		searchIsland(g, row, col+1, h, w)
 	}
