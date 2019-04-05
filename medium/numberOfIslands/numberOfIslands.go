@@ -1,17 +1,6 @@
-package main
+package numberOfIslands
 
 import "fmt"
-
-func main() {
-	g := [][]byte{
-		{'1', '1', '1'},
-		{'0', '1', '0'},
-		{'1', '1', '1'},
-	}
-
-	debug(g)
-	fmt.Println("Total Islands:", numIslands(g))
-}
 
 const (
 	land  = '1'

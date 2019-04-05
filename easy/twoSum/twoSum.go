@@ -1,35 +1,8 @@
-package main
+package twoSum
 
 import (
-	"fmt"
 	"sort"
-	"sync"
 )
-
-func main() {
-	var wg sync.WaitGroup
-	wg.Add(3)
-
-	n := []int{15, 7, 2, 11}
-	t := 91
-
-	go func() {
-		defer wg.Done()
-		fmt.Printf("Non-Sorted Two Sums Results: %+v = %d\n", bruteTwoSum(n, t), t)
-	}()
-
-	go func() {
-		defer wg.Done()
-		fmt.Printf("Sorted Two Sums Results: %+v = %d\n", sortedTwoSum(n, t), t)
-	}()
-
-	go func() {
-		defer wg.Done()
-		fmt.Printf("One loop hash lookup Two Sums Results: %+v = %d\n", onePassHash(n, t), t)
-	}()
-
-	wg.Wait()
-}
 
 func onePassHash(nums []int, target int) []int {
 	l := make(map[int]int)

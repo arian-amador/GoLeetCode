@@ -1,10 +1,8 @@
-package main
+package uniqueEmailAddresses
 
 import (
 	"strings"
 )
-
-func main() {}
 
 func numUniqueEmails(emails []string) int {
 	t := make(map[string]struct{})

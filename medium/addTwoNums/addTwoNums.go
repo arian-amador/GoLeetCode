@@ -1,29 +1,13 @@
-package main
+package addTwoNums
 
 import (
-	"fmt"
 	"strconv"
-	"time"
 )
 
 // ListNode describes a node in a linked list
 type ListNode struct {
 	Val  int
 	Next *ListNode
-}
-
-func main() {
-	// Big Int Test
-	// l1 := NewList([]int{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1})
-	// l2 := NewList([]int{5, 6, 4})
-
-	// Normal Int Test
-	l1 := NewList([]int{2, 4, 4})
-	l2 := NewList([]int{5, 6, 4})
-
-	t0 := time.Now()
-	final := AddTwoLists(l1, l2)
-	fmt.Println("Add two linked lists results ->", final.debug(), "finished in", time.Since(t0))
 }
 
 // AddTwoLists adds two linked lists of numbers

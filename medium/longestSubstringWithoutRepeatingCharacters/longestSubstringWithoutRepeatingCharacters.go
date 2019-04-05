@@ -1,6 +1,4 @@
-package main
-
-func main() {}
+package longestSubstringWithoutRepeatingCharacters
 
 func lengthOfLongestSubstring(s string) int {
 	var head, max int

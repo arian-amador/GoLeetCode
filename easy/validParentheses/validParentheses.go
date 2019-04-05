@@ -1,10 +1,8 @@
-package main
+package validParentheses
 
 import (
 	"fmt"
 )
-
-func main() {}
 
 func isValid(s string) bool {
 	// Empty strings are valid
