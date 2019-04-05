@@ -1,4 +1,4 @@
-# Go Leet Code Exercise [![Build Status](https://api.travis-ci.org/arian-amador/GoLeetCode.svg)](https://travis-ci.org/arian-amador/GoLeetCode) [![Go Report Card](https://goreportcard.com/badge/github.com/arian-amador/GoLeetCode)](https://goreportcard.com/report/github.com/arian-amador/GoLeetCode)
+# Go Leet Code Exercise [![Build Status](https://api.travis-ci.org/arian-amador/GoLeetCode.svg)](https://travis-ci.org/arian-amador/GoLeetCode) [![Go Report Card](https://goreportcard.com/badge/github.com/arian-amador/GoLeetCode)](https://goreportcard.com/report/github.com/arian-amador/GoLeetCode) [![Coverage Status](https://coveralls.io/repos/github/arian-amador/GoLeetCode/badge.svg?branch=master)](https://coveralls.io/github/arian-amador/GoLeetCode?branch=master)
 
 ---
 
