@@ -30,24 +30,24 @@ One of the key ideas is that we only have to store the open bracket bytes. This 
 want to check for a match if we come across a close bracket byte.
 
 ```Go
-	for i := range s {
-		if isOpen(s[i]) {
-			stack.push(s[i])
-			continue
-		} else if isClose(s[i]) {
-			// Check if close bracket found at first byte
-			if stack.empty() {
-				return false
-			}
-			// check if latest close byte has open matching bracket
-			b := stack.pop()
-			if !isPairMatch(b, s[i]) {
-				return false
-			}
-		} else {
+for i := range s {
+	if isOpen(s[i]) {
+		stack.push(s[i])
+		continue
+	} else if isClose(s[i]) {
+		// Check if close bracket found at first byte
+		if stack.empty() {
 			return false
 		}
+		// check if latest close byte has open matching bracket
+		b := stack.pop()
+		if !isPairMatch(b, s[i]) {
+			return false
+		}
+	} else {
+		return false
 	}
+}
 ```
 
 Image a stack that we push open bracket bytes into. Then when we get to a close bracket we `pop` the last open bracket from the top of our stack and validate they are a matching pair.
