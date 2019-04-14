@@ -18,16 +18,17 @@ I'll also include a `README.md` file per folder as a way to track notes and thin
 
 ### Exercises
 
-| #   | Name                                                                                                                                                  | Difficulty | Runtime | Memory |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------- | ------ |
-| 1   | [Two Sums](https://github.com/arian-amador/GoLeetCode/tree/master/easy/twoSum)                                                                        | Easy       | 4 ms    | 3.7 MB |
-| 929 | [Unique Email Addresses](https://github.com/arian-amador/GoLeetCode/tree/master/easy/uniqueEmailAddresses)                                            | Easy       | 8 ms    | 8 MB   |
-| 2   | [Add Two Nums](https://github.com/arian-amador/GoLeetCode/tree/master/medium/addTwoNums)                                                              | Medium     | 12 ms   | 4.9 MB |
-| 3   | [Longest Substring Without Repeating Chars](https://github.com/arian-amador/GoLeetCode/tree/master/medium/longestSubstringWithoutRepeatingCharacters) | Medium     | 8 ms    | 3.8 MB |
-| 200 | [Number of Islands](https://github.com/arian-amador/GoLeetCode/tree/master/medium/numberOfIslands)                                                    | Medium     | 0 ms    | 2.9 MB |
-| 20  | [Valid Parentheses](https://github.com/arian-amador/GoLeetCode/tree/master/easy/validParentheses)                                                     | Easy       | 0 ms    | 2 MB   |
-| 53  | [Maximum Subarray](https://github.com/arian-amador/GoLeetCode/tree/master/easy/maximumSubarray)                                                       | Easy       | 4 ms    | 3.3 MB |
-| 21  | [Merge Two Sorted Lists](https://github.com/arian-amador/GoLeetCode/tree/master/easy/mergeTwoSortedLists)                                             | Easy       | 0 ms    | 2.5 MB |
+| #   | Name                                                                                                                                                  | Difficulty | Runtime | Memory  |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------- | ------- |
+| 1   | [Two Sums](https://github.com/arian-amador/GoLeetCode/tree/master/easy/twoSum)                                                                        | Easy       | 4 ms    | 3.7 MB  |
+| 929 | [Unique Email Addresses](https://github.com/arian-amador/GoLeetCode/tree/master/easy/uniqueEmailAddresses)                                            | Easy       | 8 ms    | 8 MB    |
+| 2   | [Add Two Nums](https://github.com/arian-amador/GoLeetCode/tree/master/medium/addTwoNums)                                                              | Medium     | 12 ms   | 4.9 MB  |
+| 3   | [Longest Substring Without Repeating Chars](https://github.com/arian-amador/GoLeetCode/tree/master/medium/longestSubstringWithoutRepeatingCharacters) | Medium     | 8 ms    | 3.8 MB  |
+| 200 | [Number of Islands](https://github.com/arian-amador/GoLeetCode/tree/master/medium/numberOfIslands)                                                    | Medium     | 0 ms    | 2.9 MB  |
+| 20  | [Valid Parentheses](https://github.com/arian-amador/GoLeetCode/tree/master/easy/validParentheses)                                                     | Easy       | 0 ms    | 2 MB    |
+| 53  | [Maximum Subarray](https://github.com/arian-amador/GoLeetCode/tree/master/easy/maximumSubarray)                                                       | Easy       | 4 ms    | 3.3 MB  |
+| 21  | [Merge Two Sorted Lists](https://github.com/arian-amador/GoLeetCode/tree/master/easy/mergeTwoSortedLists)                                             | Easy       | 0 ms    | 2.5 MB  |
+| 146 | [LRU Cache](https://github.com/arian-amador/GoLeetCode/tree/master/hard/lruCache)                                                                     | Hard       | 136 ms  | 16.9 MB |
 
 ---
 
